@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e49ace8865968b3798bc72bec6d4b0ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e49ace8865968b3798bc72bec6d4b0ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e49ace8865968b3798bc72bec6d4b0ae = L.map(
+                "map_e49ace8865968b3798bc72bec6d4b0ae",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    loction: [7.9499962, 4.7833302],
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56f624cbf0fa82d93b1a36a87d191f5b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e49ace8865968b3798bc72bec6d4b0ae);
+        
+    
+            var marker_b5933011e581f5789f59c62a6d753188 = L.marker(
+                [7.9499962, 4.7833302],
+                {}
+            ).addTo(map_e49ace8865968b3798bc72bec6d4b0ae);
+        
+    
+            var icon_d13ab8da72979d2993c0d2ad02f45a34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5933011e581f5789f59c62a6d753188.setIcon(icon_d13ab8da72979d2993c0d2ad02f45a34);
+        
+    
+        var popup_ef4266612b7e452b3c963e4d921bc42c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5ec370258613e6c4a3a9452f820958a = $(`<div id="html_e5ec370258613e6c4a3a9452f820958a" style="width: 100.0%; height: 100.0%;"><strong>5, Eboka street</strong</div>`)[0];
+                popup_ef4266612b7e452b3c963e4d921bc42c.setContent(html_e5ec370258613e6c4a3a9452f820958a);
+            
+        
+
+        marker_b5933011e581f5789f59c62a6d753188.bindPopup(popup_ef4266612b7e452b3c963e4d921bc42c)
+        ;
+
+        
+    
+    
+            marker_b5933011e581f5789f59c62a6d753188.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
